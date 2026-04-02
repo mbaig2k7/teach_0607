@@ -1,0 +1,129 @@
+sudo dnf -y install dnf-plugins-core
+    4  cd
+    5  clear
+    6  sudo dnf -y install dnf-plugins-core
+    7  sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+    8  sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    9  systemctl start docker
+   10  docker pull devopstrainer1/0507:manoj
+   11  docker images
+   12  clear
+   13  docker images
+   14  docker save manoj -o amit.tar
+   15  docker save devopstrainer1/0507:manoj -o amit.tar
+   16  ls
+   17  docker rmi devopstrainer1/0507:manoj
+   18  docker images
+   19  docker load < amit.tar 
+   20  docker images
+   21  docker run aquasec/trivy image devopstrainer1/0507:manoj
+   22  clear
+   23  docker pull nginx
+   24  docker images
+   25  docker inspect nginx
+   26  cd /tmp
+   27  mkdir amit
+   28  cd amit
+   29  pwd
+   30  vi Dockerfile
+   31  docker build -t kiran .
+   32  docker images
+   33  docker inspect kiran
+   34  docker images
+   35  docker run -itd -P kiran
+   36  docker ps -a
+   37  curl ifconfig.co
+   38  cat Dockerfile 
+   39  vi bhavesh
+   40  vi index.html
+   41  docker build -t siva -f bhavesh .
+   42  docker images
+   43  docker run -itd -P siva
+   44  docker ps -a
+   45  docker system df
+   46  clear
+   47  docker images
+   48  docker ps -a
+   49  docker rmi siva
+   50  docker rmi siva -f
+   51  docker images
+   52  docker ps -a
+   53  docker stop f935a350cb02
+   54  docker rm f935a350cb02
+   55  docker ps -a
+   56  docker images
+   57  docker image prune
+   58  docker images
+   59  docker image prune -a
+   60  docker images
+   61  clear
+   62  docker ps
+   63  docker export d22b28d44dcc > cont.tar
+   64  ls
+   65  docker import cont.tar edureka
+   66  docker images
+   67  docker inspect kiran
+   68  docker inspect edureka
+   69  ip a
+   70  docker ps -a
+   71  docker inspect d22b28d44dcc
+   72  ip a
+   73  hostname -i
+   74  docker network ls
+   75  docker inspect bridge
+   76  docker network ls
+   77  docker run -itd --net host -P nginx
+   78  docker ps -a
+   79  docker inspect 854aa566fc89
+   80  curl ifconfig.co
+   81  docker run -itd --net host -P nginx
+   82  docker ps -a
+   83  docker logs 482527463a9d
+   84  docker network ls
+   85  docker run -itd --net none -P nginx
+   86  docker ps -a
+   87  docker inspect 9c8d9ce3f666
+   88  docker network create manoj
+   89  docker network ls
+   90  ip a
+   91  docker run -itd --net manoj nginx
+   92  docker ps -a
+   93  docker inspect 79b8f5d67f52
+   94  docker stop $(docker ps -a -q)
+   95  docker rm $(docker ps -a -q)
+   96  clear
+   97  docker ps -
+   98  docker ps -a
+   99  docker run -itd -p nginx
+  100  docker run -itd -P nginx
+  101  docker run -itd -P httpd
+  102  docker ps -a
+  103  docker exec d90b156eaef9 apt-get update
+  104  docker exec d90b156eaef9 apt-get install -y iputils-ping
+  105  clear
+  106  docker ps -a
+  107  docker exec d90b156eaef9 ping 7098e5d73e9e
+  108  docker inspect 7098e5d73e9e
+  109  docker exec d90b156eaef9 ping 172.17.0.2
+  110  docker network ls
+  111  docker run -itd --net manoj nginx
+  112  docker ps -a
+  113  docker exec d90b156eaef9 ping 4df00bc2da80
+  114  docker inspect 4df00bc2da80
+  115  docker exec d90b156eaef9 ping 172.18.0.2
+  116  docker inspect d90b156eaef9
+  117  docker ps -
+  118  docker ps -a
+  119  docker network
+  120  clear
+  121  docker ps -a
+  122  docker network ls
+  123  docker network connect d90b156eaef9 manoj
+  124  docker network connect manoj d90b156eaef9
+  125  docker inspect d90b156eaef9
+  126  docker ps -a
+  127  docker exec d90b156eaef9 ping 4df00bc2da80
+  128  docker inspect d90b156eaef9
+  129  docker network disconnect bridge bridge
+  130  docker network disconnect bridge d90b156eaef9
+  131  docker inspect d90b156eaef9

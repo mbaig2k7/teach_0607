@@ -1,0 +1,150 @@
+docker run nginx
+   25  docker ps -a
+   26  docker images
+   27  docker run nginx
+   28  clear
+   29  docker images
+   30  docker ps -a
+   31  docker run --name kiran nginx
+   32  docker ps -a
+   33  docker rename 4e725bc81897 murugan
+   34  docker ps -a
+   35  clear
+   36  docker run -itd --name shashi nginx
+   37  docker ps -
+   38  docker ps -a
+   39  cat /etc/os-release 
+   40  docker run -it --name ankur ubuntu
+   41  docker ps -a
+   42  docker run -it --name ankur1 ubuntu
+   43  clear
+   44  docker ps -a
+   45  clear
+   46  docker ps
+   47  docker ps -a
+   48  clear
+   49  docker ps -a
+   50  docker start 389ea28172c1
+   51  docker ps -a
+   52  docker ps -a -q
+   53  docker start $(docker ps -a -q)
+   54  docker ps -a
+   55  clear
+   56  docker ps -a
+   57  docker exec -it ankur /bin/bash
+   58  cler
+   59  clear
+   60  docker ps -a
+   61  git
+   62  docker inspect ankur
+   63  hostname -i
+   64  docker stats
+   65  docker ps -a
+   66  docker logs ankur
+   67  docker log ankur
+   68  docker ps -a
+   69  docker log 389ea28172c1
+   70  docker log
+   71  docker
+   72  clear
+   73  docker ps -a
+   74  docker logs 389ea28172c1
+   75  docker logs -f 389ea28172c1
+   76  docker ps -a
+   77  docker rm 1dbb953fff4c
+   78  docker stop 1dbb953fff4c
+   79  docker rm 1dbb953fff4c
+   80  docker kill 7d8115609376
+   81  docker stop d9f2b7a97a42
+   82  docker ps -
+   83  docker ps -a
+   84  CLEAR
+   85  clear
+   86  docker ps -a
+   87  docker container prune
+   88  docker ps -a
+   89  docker inspect 4e725bc81897
+   90  clear
+   91  docker run -itd -P --name anitha nginx
+   92  docker ps -a
+   93  curl ifconfig.co
+   94  docker run -itd -p 81:80 nginx
+   95  docker ps -a
+   96  docker restart 5b2edd352031
+   97  docker ps -a
+   98  docker run -itd -P nginx
+   99  docker ps -a
+  100  docker restart 7ae48a78e63a
+  101  docker ps -a
+  102  docker run -itd -p 80:80 nginx
+  103  docker run -itd -p 80:80 nginx
+  104  netstat -an
+  105  clear
+  106  docker ps -a
+  107  docker ps -a
+  108  service restart docker
+  109  service docker restart
+  110  docker ps -a
+  111  docker run -itd --name amit --restart always nginx
+  112  docker ps -a
+  113  docker start $(docker ps -a -q)
+  114  docker ps -a
+  115  service restart docker
+  116  service docker restart
+  117  docker ps -a
+  118  docker stats
+  119  docker run -itd --name edureka --cpus=".5" --memory "512m" nginx
+  120  docker ps -a
+  121  docker stats
+  122  docker ps -a
+  123  docker update --cpus="1" --memory "512m" befbf92874e6
+  124  docker update --cpus="1" --memory="512m" befbf92874e6
+  125  docker update --cpus="1" --memory="512m" --memoryswap="1g" befbf92874e6
+  126  docker update --cpus="1" --memory="512m" --memory-swap="1g" befbf92874e6
+  127  docker ps -a
+  128  docker stats
+  129  cat /proc/cpuinfo 
+  130  clear
+  131  docker ps -a
+  132  cd /tmp
+  133  vi a.txt
+  134  docker cp a.txt 116a82b309f4:/tmp
+  135  docker exec -it 116a82b309f4 /bin/bash
+  136  docker ps -a
+  137  docker cp 116a82b309f4:/tmp/b.txt /tmp
+  138  ls -lrt
+  139  clear
+  140  docker ps -a
+  141  docker cp 116a82b309f4:/tmp/a.txt befbf92874e6:/tmp
+  142  docker volume ls
+  143  docker volume create vol1
+  144  docker volume inspect vol1
+  145  docker run -itd --name pervez -v vol1:/tmp -P nginx
+  146  docker ps -a
+  147  docker exec -it 15ee690d5acb /bin/bash
+  148  docker vol inspect vol1
+  149  docker volume inspect vol1
+  150  cd /var/lib/docker/volumes/vol1/_data
+  151  ls -lrt
+  152  touch d.txt
+  153  touch e.txt
+  154  df -h
+  155  clear
+  156  docker run -itd -v vol1:/tmp -P nginx
+  157  docker ps -a
+  158  docker exec -it 3f5854c79c04 /bin/bash
+  159  docker run -itd -P -v /root:/tmp nginx
+  160  docker run -it ubuntu 
+  161  docker ps -a
+  162  docker commit ba5629798e60 manoj
+  163  docker images
+  164  docker run -it manoj
+  165  docker ps -a
+  166  clear
+  167  docker images
+  168  docker push devopstrainer1/0507:tagname
+  169  docker tag manoj devopstrainer1/0507:manoj
+  170  docker images
+  171  docker push devopstrainer1/0507:manoj
+  172  docker login
+  173  docker push devopstrainer1/0507:manoj

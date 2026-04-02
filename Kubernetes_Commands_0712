@@ -1,0 +1,101 @@
+kubectl version
+  503  kubernetes get nodes
+  504  kubectl get nodes
+  505  kubectl get pods
+  506  kubectl run pod1 --image nginx
+  507  kubectl get pods
+  508  kubectl describe pod1
+  509  kubectl describe pod pod1
+  510  kubectl get pods -o wide
+  511  kubectl get pods -A
+  512  clear
+  513  kubectl get pods -o wide
+  514  kubectl exec -it pod1 -- bash
+  515  kubectl get pods -o wide
+  516  kubectl logs pod pod2
+  517  kubectl logs pod pod1
+  518  kubectl logs pod1
+  519  kubectl logs -f pod1
+  520  clear
+  521  kubectl get pods
+  522  kubectl edit pod pod1
+  523  kubectl get pods
+  524  kubectl describe pod pod1
+  525  clear
+  526  kubectl get pods
+  527  kubectl delete pod pod1
+  528  kubectl get pods
+  529  kubectl run pod1 --image nginx --dry-run=client -o yaml
+  530  kubectl run pod1 --image nginx
+  531  kubectl logs pod1
+  532  cd /tmp
+  533  ls -lrt
+  534  vi a.yml
+  535  kubectl apply -f a.yml 
+  536  kubectl get pods
+  537  cat a.yml 
+  538  vi a.yml 
+  539  kubectl apply -f a.yml 
+  540  vi a.yml 
+  541  kubectl apply -f a.yml 
+  542  kubectl get pods
+  543  kubectl exec -it pod3 -- bash
+  544  kubectl exec -it -c kiran pod3 -- bash
+  545  kubectl get pods
+  546  kubectl logs -c kiran pod3
+  547  kubectl describe pod pod3
+  548  clear
+  549  kubectl get pods
+  550  vi a.yml
+  551  kubectl apply -f a.yml 
+  552  kubectl get pods
+  553  kubectl get pods --show-labels
+  554  kubectl run pod5 --image nginx --dry-run client -o yaml
+  555  vi a.yml
+  556  kubectl apply -f a.yml 
+  557  kubectl get pods --show-labels
+  558  cat a.yml 
+  559  kubectl get pods -l app=abc
+  560  vi a.yml 
+  561  kubectl apply -f a.yml 
+  562  vi a.yml 
+  563  kubectl apply -f a.yml 
+  564  kubectl get pods
+  565  kubectl describe pod pod6
+  566  kubectl describe pod pod5
+  567  vi a.yml 
+  568  kubectl apply -f a.yml 
+  569  kubectl get pods
+  570  kubectk get namespaces
+  571  kubectl get namespaces
+  572  kubectl get pods -A
+  573  kubectl create namespace kabir
+  574  kubectl get namespaces
+  575  vi a.yml 
+  576  kubectl apply -f a.yml 
+  577  vi a.yml 
+  578  kubectl apply -f a.yml 
+  579  kubectl get pods
+  580  kubectl get pods -n kabir
+  581  kubectl describe pod edureka -n kabir
+  582  kubectl delete pod pod2
+  583  kubectl describe pod edureka -n kabir
+  584  kubectl describe resourcequota
+  585  kubectl get events
+  586  kubectl get events -n kabir
+  587  kubectl logs edureka -n kabir
+  588  kubectl describe pod edureka -n kabir
+  589  kubectl top nodes
+  590  kubectl describe resourcequotas
+  591  kubectl describe resourcequotaa
+  592  kubectl get resourcequots -n kabir
+  593  kubectl get resourcequota
+  594  vi a.yml 
+  595  kubectl apply -f a.yml 
+  596  vi a.yml 
+  597  kubectl apply -f a.yml 
+  598  kubectl get pods -n kabit
+  599  kubectl get pods -n kabir
+  600  kubectl get pods
+  601  kubectl delete pod pod3
+  602  kubectl delete pod pod4
